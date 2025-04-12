@@ -1,6 +1,6 @@
 name: Update Until Blog Widget
 on:
-  schedule: [{cron: "0 0 * * *"}]
+  schedule: [{cron: "0 0 * * *"}] # See also : https://github.com/marketplace/actions/github-action-scheduler
   workflow_dispatch:
   push: {branches: ["master", "main"]}
 
