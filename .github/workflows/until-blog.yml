@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: untilled/until-github-readme@main
+      - uses: namgyu-youn/until-github-readme@main
         with:
           username: namgyu-youn
 
