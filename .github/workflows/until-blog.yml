@@ -12,17 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # 노드 환경 설정 및 의존성 설치 단계 추가
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: |
-          cd $GITHUB_WORKSPACE
-          npm ci
-
       - uses: namgyu-youn/until-github-readme@main
         with:
           username: namgyu-youn
