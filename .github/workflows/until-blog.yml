@@ -1,6 +1,6 @@
 name: Update Until Blog Widget
 on:
-  schedule: [{cron: "0 0 * * *"}] # See also :
+  schedule: [{cron: "0 0 * * *"}] # See also : https://github.com/marketplace/actions/github-action-scheduler
   workflow_dispatch:
   push: {branches: ["master", "main"]}
 
@@ -16,7 +16,7 @@ jobs:
         with:
           username: namgyu-youn
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
